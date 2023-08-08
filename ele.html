@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+              padding: 25px;
+              background-color: white;
+              color: black;
+              font-size: 25px;
+            }
+            
+            .dark-mode {
+              background-color: black;
+              color: white;
+            }
+            </style>
+    </head>
+<body>
+    <h2><center>BLEACH</center></h2>
+
+    <p>Kurosaki Ichigo has two forms:</p>
+
+    <p id="demo" style="display:none">Shikai</p>
+    <p id="demo1" style="display:none">Bankai</p>
+
+    <button onclick="myFunction()">Change</button>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("demo");
+        var y = document.getElementById("demo1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        }
+        else {
+            x.style.display = "none"
+        }
+        if (x.style.display === "none") {
+            y.style.display = "block";
+        }
+        else {
+            y.style.display = "none"
+        }
+
+        }
+    </script>
+    <button id = "btn" onclick="myFunction1()">Page Mode</button>
+    <script>
+        function myFunction1() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+
+</body>
+</html> 
